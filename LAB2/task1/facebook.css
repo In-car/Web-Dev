@@ -1,12 +1,17 @@
 body {
-    background-color: rbg(242,244,247);
+    background-color: rgb(242, 244, 246);;
 }
 
 .greatings{
 
 }
 
+.l_block{
+
+}
+
 .facebook_logo{
+    width: 220px;
 
 }
 
@@ -20,36 +25,52 @@ body {
 }
 
 .bb_outliner{
-    background-color: rbg(255,255,255);
+    width: 500px;
+    background-color: #fff;
+    border: 2px solid rgb(242, 244, 246);
+    border-radius: 10px;
+    padding: 20px;
+
 }
 
 .a_block{
-
+    border: 2px solid rgb(242, 244, 246);
+    border-radius: 10px;
 }
 
 .adress{
+    color: rgb(145, 148, 155);;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 
 }
 
 .p_block{
+    background-color: #fff;
+    border: 2px solid rgb(242, 244, 246);
+    border-radius: 10px;
 
 }
 
 .password{
+    color: rgb(145, 148, 155);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 
 }
 
 .s_block{
+    background-color: rgb(44, 100, 246);
+    text-align: center;
+    border: 2px solid rgb(44, 100, 246);
+    border-radius: 10px;
 
 }
 
 .sign_in{
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+
 
 }
 
@@ -64,13 +85,16 @@ body {
 }
 
 .n_block{
-
+    width: 250px;
+    background-color: rgb(101, 181, 67);
+    text-align: center;
+    border: 2px solid rgb(101, 181, 67);
+    border-radius: 10px;
 }
 
 .new_prof{
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-
 }
 
 .d_block{
