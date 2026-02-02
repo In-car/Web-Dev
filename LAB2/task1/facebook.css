@@ -5,42 +5,83 @@ body {
 .greatings{
 
 }
+
 .facebook_logo{
 
 }
 
 .headliner{
-
+    
 }
 
 .info_h{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.bb_outliner{
+    background-color: rbg(255,255,255);
+}
+
+.a_block{
 
 }
 
 .adress{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+
+.p_block{
 
 }
 
 .password{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+
+.s_block{
 
 }
 
 .sign_in{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+
+.f_block{
 
 }
 
 .forg_pas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+
+.n_block{
 
 }
 
 .new_prof{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+}
+
+.d_block{
 
 }
 
 .ext_data{
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 .bold_info{
-    
+
 }
