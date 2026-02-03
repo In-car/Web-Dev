@@ -1,66 +1,103 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Instagram Login</title>
-        <link rel="stylesheet" href="instagram.css"> 
-    </head>
-    <body>
-    <div class="page">
-        <div class="main"><!--Welcome page in box-->
-            <div class="b_message">
-                <h2 class="message">
-                    Посмотрите, какими<br>
-                    моментами из жизни<br>
-                    поделились ваши <span class="orange">близкие</span><br>
-                    <span class="pink">друзья.</span>
-                </h2>
-            </div>
-            <div class="b_img">
-                <img class="img" src="pics.png" alt="Picture">
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <title>Instagram</title>
+  <link rel="stylesheet" href="instagram.css" />
+</head>
+<body>
+
+  <main class="page">
+    <section class="layout">
+
+      <!--Main page-->
+      <div class="main">
+        <div class="ig-mini" aria-label="Instagram logo"></div>
+
+        <h1 class="welcome">
+          Посмотрите, какими<br>
+          моментами из жизни<br>
+          поделились ваши близкие<br>
+          <span class="orange">близкие</span><br>
+          <span class="pink">друзья.</span>
+        </h1>
+        <div class="image">
+            <img class="pic" src="pics.png">
         </div>
 
+    <div class="divider" aria-hidden="true"></div>
+      <!--login-page-->
+      <div class="login-page">
+        <div class="login-box">
+          <p class="login-title">Войти в Instagram</p>
 
-        <div class="login_page"><!--Login page box-->
-            <h4 class="heading">Войти в Instagram</h4>
-            <form>
-            <label class="" for="username">Имя пользователя, телефон или email</label>
+          <form class="form" action="#" method="post">
+            <label class="main-inp" for="user">Имя пользователя, телефон или email</label>
             <input
               class="input"
-              id="username"
+              id="user"
               type="text"
-              name="username"
+              name="user"
               placeholder="Имя пользователя, номер мобильного телефона или электронны..."
               required
             />
 
-            <label class="" for="password">Пароль</label>
+            <label class="main-inp" for="pass">Пароль</label>
             <input
               class="input"
-              id="pwd"
+              id="pass"
               type="password"
-              name="pwd"
+              name="pass"
               placeholder="Пароль"
               required
-              />
+            />
 
-            <button class="log_in" type="button">Войти</button>
+            <button class="btn btn-main" type="submit">Войти</button>
 
-            <a class="forg_pas" href="">Забыли пороль?</a>
+            <a class="link center" href="">Забыли пароль?</a>
 
-            <button class="sign_in" type="button">Войти через Facebook</button>
-            <button class="new_prof" type="button">Создать новый аккаут</button>
-            
+            <button class="btn btn-outline" type="button">
+              <span class="fb-dot"></span>
+              Войти через Facebook
+            </button>
 
-            <div class="b_meta">
-                <a class="meta" href="">Meta</a>
+            <button class="btn btn-outline2" type="button">
+              Создать новый аккаунт
+            </button>
+
+            <div class="meta-row">
+              <span class="meta-icon" aria-hidden="true"></span>
+              <a class="link meta-link" href="">Meta</a>
             </div>
-
-              
-
+          </form>
         </div>
+      </div>
 
-    </div>
-    </body>
+    </section>
+
+    <!--footers-->
+    <footer class="footer">
+      <nav class="footer-nav" aria-label="Footer links">
+        <a href="#">Meta</a>
+        <a href="#">Информация</a>
+        <a href="#">Блог</a>
+        <a href="#">Вакансии</a>
+        <a href="#">Помощь</a>
+        <a href="#">API</a>
+        <a href="#">Конфиденциальность</a>
+        <a href="#">Условия</a>
+        <a href="#">Места</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#">Threads</a>
+        <a href="#">Загрузка контактов</a>
+        <a href="#">Meta Verified</a>
+      </nav>
+
+      <div class="footer-bottom">
+        <span>Русский</span>
+        <span>© 2026 Instagram from Meta</span>
+      </div>
+    </footer>
+  </main>
+
+</body>
 </html>
