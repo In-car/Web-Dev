@@ -249,13 +249,36 @@ body{
 }
 
 img {
-    width: 250px;
+    width: 400px;
 }
 
 .layout{
+  display:grid;
+  grid-template-columns: 1fr 1px 420px;
+}
+.divider{
+  background: var(--border);
+}
+
+
+@media (max-width: 900px){
+  .layout{
     grid-template-columns: 1fr;
   }
-.divider{ display:none; }
-.left{ padding: 18px 16px; }
-.img{ display:none; }
-.right{ justify-content:center; }
+
+  .divider{
+    display:none;
+  }
+
+  .left{
+    padding: 18px 16px;
+  }
+
+  .img{
+    display:none;
+  }
+
+  .right{
+    justify-content:center;
+  }
+}
