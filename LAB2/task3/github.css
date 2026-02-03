@@ -22,10 +22,6 @@ body {
   gap: 24px;
 }
 
-.logo {
-  height: 32px;
-}
-
 nav span {
   margin-right: 16px;
   font-size: 14px;
@@ -62,7 +58,7 @@ nav span {
 }
 
 .primary {
-  background: #1f883d;
+  background: black;
   color: white;
   border: none;
   padding: 12px 20px;
