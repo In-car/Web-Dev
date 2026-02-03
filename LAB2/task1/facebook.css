@@ -1,115 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(242, 244, 246);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f2f5;
+  color: #1c1e21;
 }
 
-.greatings{
-    display: flex;
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 20px;
 }
 
-.l_block{
-
+.container {
+  width: 980px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
 }
 
-.facebook_logo{
-    width: 220px;
-
+.main {
+  flex: 1;
+  padding: 10px;
 }
 
-.headliner{
-    
+.logo {
+    width: 300px;
 }
 
-.info_h{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+.subtitle {
+  margin-top: 14px;
+  font-size: 24px;
+  line-height: 1.2;
+  max-width: 460px;
 }
 
-.bb_outliner{
-    width: 400px;
-    background-color: #fff;
-    border: 2px solid rgb(242, 244, 246);
-    border-radius: 10px;
-    padding: 20px;
-
+.login{
+  width: 396px;
 }
 
-.a_block{
-    border: 2px solid rgb(242, 244, 246);
-    border-radius: 10px;
-    margin: 5px;
-    margin: 5px;
-    padding: 0px 0px 0px 10px;
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  padding: 16px;
 }
 
-.adress{
-    color: rgb(145, 148, 155);;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.p_block{
-    background-color: #fff;
-    border: 2px solid rgb(242, 244, 246);
-    border-radius: 10px;
-    margin: 5px;
-    padding: 0px 0px 0px 10px;
-
+.input {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  padding: 0 14px;
+  font-size: 17px;
+  outline: none;
 }
 
-.password{
-    color: rgb(145, 148, 155);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-
+.input:focus {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
 }
 
-.s_block{
-    background-color: rgb(44, 100, 246);
+.btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-login {
+  height: 48px;
+  background: #1877f2;
+  color: #fff;
+  font-size: 20px;
+}
+
+.btn-login:hover {
+  background: #166fe5;
+}
+
+.forgot {
+  text-align: center;
+  font-size: 14px;
+  color: #1877f2;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  height: 1px;
+  background: #dadde1;
+  margin: 6px 0;
+}
+
+.btn-create {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 16px;
+  background: #42b72a;
+  color: #fff;
+  font-size: 17px;
+}
+
+.btn-create:hover {
+  background: #36a420;
+}
+
+.bottom-text {
+  margin-top: 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #1c1e21;
+}
+
+.create-page {
+  color: #1c1e21;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.create-page:hover {
+  text-decoration: underline;
+}
+
+.log-in {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 980px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    gap: 22px;
     text-align: center;
-    border: 2px solid rgb(44, 100, 246);
-    border-radius: 10px;
+  }
 
-}
+  .subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
 
-.sign_in{
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-
-
-}
-
-.f_block{
-
-}
-
-.forg_pas{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-
-}
-
-.n_block{
-    width: 250px;
-    background-color: rgb(101, 181, 67);
-    text-align: center;
-    border: 2px solid rgb(101, 181, 67);
-    border-radius: 10px;
-}
-
-.new_prof{
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.ext_data{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-}
-
-.bold_info{
-
+  .login {
+    width: 100%;
+    max-width: 396px;
+  }
 }

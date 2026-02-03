@@ -1,43 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="facebook.css">
-        
-        <title>Facebook Login</title>
-    </head>
-    <body>
-        <!--adding all to div for easy shifting-->
-        <div class="greeting"> <!--grouping headliner with logo-->    
-            <div class="l_block">
-                <img class="facebook_logo" src="facebook_logo.png" alt="facebook logo">
-            </div>
-            <div class="headliner">
-                <h2 class="info_h">
-                    Facebook помогает вам всегда<br>
-                    оставаться на связи и общаться со<br> 
-                    своими знакомыми.
-                </h2>
-            </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Facebook</title>
+  <link rel="stylesheet" href="facebook.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="container">
+
+      <!--main-block-->
+      <div class="main">
+        <img class="logo" src="facebook_logo.png">
+        <p class="subtitle">
+         Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.
+        </p>
+      </div>
+
+      <!--login block-->
+      <div class="login">
+        <div class="card">
+          <form class="form" action="#" method="post">
+            
+            <label class="log-in" for="email">Электронный адрес или номер телефона</label>
+            <input
+              id="email"
+              class="input"
+              type="text"
+              name="email"
+              placeholder="Email or phone number"
+              required
+            />
+
+            <label class="log-in" for="password">Пароль</label>
+            <input
+              id="password"
+              class="input"
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+
+            <button class="btn btn-login" type="submit">Вход</button>
+
+            <a class="forgot" href="#">Забыли пороль?</a>
+
+            <div class="divider"></div>
+
+            <a class="btn btn-create" href="#">Создать новый аккаунт</a>
+          </form>
         </div>
-        <!--grouping into box-->
-        <div class="bb_outliner">
-            <div class="a_block">
-                <h3 class="adress">Электронный адрес или номер телефона</h3>
-            </div>
-            <div class="p_block">
-                <h3 class="password">Пароль</h3>
-            </div>
-            <div class="s_block">
-                <h2 class="sign_in">Вход</h2>
-            </div>
-            <div class="f_block">
-                <a class="forg_pas">Забыли пороль?</a>
-            </div>
-            <div class="n_block">
-                <h3 class="new_prof">Создать новый аккаунт</h3>
-            </div>
-            <h4 class="ext_data"><a class="bold_info" href="">Создать Страницу</a> знаменитости, музыкальной группы или <br>компании.</h4>
-        </div>
-    </body>
+
+        <p class="bottom-text">
+          <a class="create-page" href="#">Создать Страницу</a> знаменитости, музыкальной группы тлт компании.
+        </p>
+      </div>
+
+    </section>
+  </main>
+</body>
 </html>
