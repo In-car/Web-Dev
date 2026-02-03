@@ -48,7 +48,7 @@ body{
   padding: 26px 26px;
   display:flex;
   justify-content:center;
-  align-items:flex-start;
+  align-items:center;
 }
 
 .hero-title{
@@ -171,11 +171,8 @@ body{
   gap: 8px;
 }
 
-.fb-dot{
-  width: 14px;
-  height: 14px;
-  border-radius: 3px;
-  background:#1877f2;
+.meta-pic{
+  width: 20px;
 }
 
 .btn-outline2{
@@ -192,11 +189,8 @@ body{
   gap: 6px;
 }
 
-.meta-icon{
-  width: 14px;
-  height: 14px;
-  border-radius: 4px;
-  background: linear-gradient(135deg, #0a66ff, #00d0ff);
+.face-icon{
+  width: 20px;
 }
 
 .meta-link{
