@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Instagram</title>
+  <title>Instagram </title>
   <link rel="stylesheet" href="instagram.css" />
 </head>
 <body>
@@ -9,29 +10,26 @@
   <main class="page">
     <section class="layout">
 
-      <!--Main page-->
-      <div class="main">
+      <div class="left">
         <div class="ig-mini" aria-label="Instagram logo"></div>
-
-        <h1 class="welcome">
+        
+        <h1 class="hero-title">
           Посмотрите, какими<br>
           моментами из жизни<br>
           поделились ваши близкие<br>
-          <span class="orange">близкие</span><br>
-          <span class="pink">друзья.</span>
+          <span class="c-orange">близкие</span><br>
+          <span class="c-pink">друзья.</span>
         </h1>
-        <div class="image">
-            <img class="pic" src="pics.png">
-        </div>
+        <img src="pics.png" alt="pics">
+        <div class="divider" aria-hidden="true"></div>
 
-    <div class="divider" aria-hidden="true"></div>
-      <!--login-page-->
-      <div class="login-page">
+
+      <div class="right">
         <div class="login-box">
           <p class="login-title">Войти в Instagram</p>
 
           <form class="form" action="#" method="post">
-            <label class="main-inp" for="user">Имя пользователя, телефон или email</label>
+            <label class="sr-only" for="user">Имя пользователя, телефон или email</label>
             <input
               class="input"
               id="user"
@@ -41,7 +39,7 @@
               required
             />
 
-            <label class="main-inp" for="pass">Пароль</label>
+            <label class="sr-only" for="pass">Пароль</label>
             <input
               class="input"
               id="pass"
@@ -53,10 +51,16 @@
 
             <button class="btn btn-main" type="submit">Войти</button>
 
-            <a class="link center" href="">Забыли пароль?</a>
+            <a class="link center" href="#">Забыли пароль?</a>
+
+            <div class="or-block">
+              <div class="or-line"></div>
+              <div class="or-text">ИЛИ</div>
+              <div class="or-line"></div>
+            </div>
 
             <button class="btn btn-outline" type="button">
-              <span class="fb-dot"></span>
+              <span class="fb-dot" aria-hidden="true"></span>
               Войти через Facebook
             </button>
 
@@ -66,7 +70,7 @@
 
             <div class="meta-row">
               <span class="meta-icon" aria-hidden="true"></span>
-              <a class="link meta-link" href="">Meta</a>
+              <a class="link meta-link" href="#">Meta</a>
             </div>
           </form>
         </div>
@@ -74,7 +78,6 @@
 
     </section>
 
-    <!--footers-->
     <footer class="footer">
       <nav class="footer-nav" aria-label="Footer links">
         <a href="#">Meta</a>
