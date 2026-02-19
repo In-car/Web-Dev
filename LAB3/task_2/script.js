@@ -18,7 +18,7 @@ addBtn.addEventListener("click", function () {
   text.textContent = input.value;
 
   const deleteBtn = document.createElement("span");
-  deleteBtn.textContent = "🗑";
+  deleteBtn.textContent = "X";
   deleteBtn.className = "delete-btn";
 
   checkbox.addEventListener("change", function () {
