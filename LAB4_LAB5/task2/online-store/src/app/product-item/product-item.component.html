@@ -1,0 +1,42 @@
+<div class="container">
+<div class="card">
+  <div class="image-container">
+    <img [src]="product().image" alt="{{ product().name }}">
+  </div>
+
+  <div class="title">
+    {{ product().name }}
+  </div>
+
+  <div class="price">
+    {{ product().price }} ₸
+  </div>
+
+  <div class="rating">
+    ⭐ {{ product().rating }}
+  </div>
+
+  <a class="share-kaspi"
+  [href]="product().link" target="_blank">
+    View on Kaspi
+  </a>
+
+  <a class="share-wts"
+    [href]="'https://wa.me/?text=' + product().link"
+    target="_blank">
+  Share
+  </a>
+
+  <div class="actions">
+    <button class="buy-btn">Buy</button>
+
+    <button class="like-btn" (click)="like()">
+      ❤️ {{ likes }}
+    </button>
+
+    <button class="delete-btn" (click)="delete.emit(product().id)">
+      Delete
+    </button>
+  </div>
+</div>
+</div>
