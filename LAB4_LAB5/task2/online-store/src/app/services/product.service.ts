@@ -99,7 +99,7 @@ export class ProductService {
     description: 'Acer Aspire 16 a powerful and stylish laptop that is ideal for work and entertainment.',
     price: 280000,
     rating: 4.6,
-    image: "images/acer.jpg",
+    image: "images/Acer.jpg",
     images: ['img1','img2','img3'],
     link: 'https://kaspi.kz/shop/p/acer-aspire-16-16-gb-emmc-512-gb-win-11-pro-nx-j5rem-01c-al16-52p-135804242/?c=750000000',
     likes: 0,

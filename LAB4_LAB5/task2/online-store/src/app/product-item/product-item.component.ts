@@ -13,7 +13,9 @@ export class ProductItemComponent {
   delete = output<number>();
 
   likes = 0;
-
+  
+  limit = 10;
+  
   like() {
     this.likes++;
   }

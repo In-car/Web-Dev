@@ -30,11 +30,15 @@
   <div class="actions">
     <button class="buy-btn">Buy</button>
 
-    <button class="like-btn" (click)="like()">
+    <button class="like-btn" 
+    (click)="like()"
+   >
       ❤️ {{ likes }}
     </button>
 
-    <button class="delete-btn" (click)="delete.emit(product().id)">
+    <button class="delete-btn" 
+    [disabled]="likes>=limit"
+    (click)="delete.emit(product().id)">
       Delete
     </button>
   </div>
