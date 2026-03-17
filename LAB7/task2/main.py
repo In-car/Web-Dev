@@ -4,16 +4,17 @@ a = Animal("Manmal", 12)
 myDog = Dog("Sharik", 3, "German shephard")
 myCat = Cat("Murka" , 6, "Siamese cat")
 
-print(a.get_info())
+print(a)
 a.sound()
 a.treat("Fruit")
 
-print(myDog.get_info())
+print(myDog)
 myDog.sound()
 myDog.treat("Chocolate")
+myDog.trick("speek")
 
-print(myCat.get_info())
+print(myCat)
 myCat.sound()
 myCat.treat("Fish")
-
+myCat.pet()
  
