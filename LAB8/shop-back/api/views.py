@@ -1,7 +1,6 @@
 from django.http import JsonResponse
 from .models import Product, Category
 
-# /api/products/
 def products_list(request):
     products = Product.objects.all()
     data = [
@@ -19,7 +18,6 @@ def products_list(request):
     return JsonResponse(data, safe=False)
 
 
-# /api/products/<id>/
 def product_detail(request, id):
     try:
         p = Product.objects.get(id=id)
@@ -37,14 +35,12 @@ def product_detail(request, id):
         return JsonResponse({"error": "Not found"}, status=404)
 
 
-# /api/categories/
 def categories_list(request):
     categories = Category.objects.all()
     data = [{"id": c.id, "name": c.name} for c in categories]
     return JsonResponse(data, safe=False)
 
 
-# /api/categories/<id>/
 def category_detail(request, id):
     try:
         c = Category.objects.get(id=id)
@@ -54,7 +50,7 @@ def category_detail(request, id):
         return JsonResponse({"error": "Not found"}, status=404)
 
 
-# /api/categories/<id>/products/
+
 def category_products(request, id):
     try:
         category = Category.objects.get(id=id)
@@ -70,3 +66,4 @@ def category_products(request, id):
         return JsonResponse(data, safe=False)
     except Category.DoesNotExist:
         return JsonResponse({"error": "Not found"}, status=404)
+    
